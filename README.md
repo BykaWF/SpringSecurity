@@ -13,3 +13,31 @@
     ```
 
 - `GrantedAuthority` -> tell us role of user
+
+
+### 2. Create JWT Filter
+We want to have active this filter when user send a request to the server
+
+- `FilterChain filterChain` -> provide ability to make a chain of filters
+- `OncePerRequestFilter` -> ensure that will be executed per request dispatch
+
+For to be able handling request and response add:
+```agsl
+                <dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version> 0.11.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+```
