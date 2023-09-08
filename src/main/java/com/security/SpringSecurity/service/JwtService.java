@@ -20,7 +20,7 @@ public class JwtService {
     /**
      * SECRET_KEY is used for VERIFY SIGNATURE ( headers, payload and secret)
      */
-    private static final String SECRET_KEY = "46be0927a4f86577f17ce6d10bc6aa61";
+    private static final String SECRET_KEY = "1c9016625e2f864bf9e36753f709e1ecbff11e904dd913b0abb04a1c35f59c7b";
 
     public String extractUsername(String token)
     {
