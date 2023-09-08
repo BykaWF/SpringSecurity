@@ -23,7 +23,7 @@ We want to have active this filter when user send a request to the server
 
 For to be able handling request and response add:
 ```agsl
-                <dependency>
+        <dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt-api</artifactId>
 			<version> 0.11.5</version>
@@ -41,3 +41,12 @@ For to be able handling request and response add:
 			<version>0.11.5</version>
 		</dependency>
 ```
+Claims -> statement about the user and entity 
+
+### There are 3 types:
+
+  - register (not recommended)
+  - private (custom)
+  - public
+
+Signature key is type of algo is used  
